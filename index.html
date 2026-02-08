@@ -3,158 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <title>My Portfolio</title>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Computer Engineer</p>
-                <h1>I'm <span>Aary</span> Jadhav</h1>
-            </div>
-        </div>
-    </div>
-    <!-----------------about-------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="content-left.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p class="p">Hi, I'm Aary Jadhav, a second-year Computer Engineering student at PDEA's College of Engineering. I'm passionate about technology and enjoy exploring how things work, from coding and web development to emerging fields like AI and cybersecurity. My goal is to keep learning, grow as a developer, and contribute to building innovative tech solutions that make an impact.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab(event,'Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab(event,'Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab(event,'Education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                        <li><span> Programming Language</span><br>Python,c++,java,c</li>
-                        <li><span> Web Development</span><br>HTML,css,Javascript,React.js</li>
-                        <li><span> Soft-skills</span><br>Problem solving & Analytical thinking<br>Team collaboration<br>Project management</li></ul>
-                    </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                        <li><span>******</span><br>__________</li>
-                        <li><span>******</span><br>__________</li>
-                        <li><span>******</span><br>__________</li></ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                        <li><span>Bacheler of Engineering(B.E.)<br></span>Computer Engineer-Second year, <br>PDEA's Collage of Engineering,manjari-(2025-Present)</li>
-                        <li><span>Higher Secondary Certificate(HSC)<br></span>12TH-Science ,<br>Waghire College Saswad-(Year of Completion Feb-2024)</li>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------projects------->
-    <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">Projects</h1>
-            <div class="projects-list">
-                <div>
-                    <i class="fa-brands fa-google"></i>
-                    <h2>GDG on campus</h2>
-                    <p>Member of Google Developer Group (GDG) on Campus | Exploring tech, building projects, and growing with the developer community.</p>
-                    <a href="https://www.credly.com/users/aary-jadhav">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>web Design</h2>
-                    <p>abcdefghijklmnopqrs
-                       tuvwxyzabcdefghijklm
-                       nopqrstuvwxyabcdefgh
-                       ijklmnopqrstuvwxyzab
-                       cdefghijklmnopqrstuv</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>web Design</h2>
-                    <p>abcdefghijklmnopqrstusldkjbv
-                        vwxyzabcdefghijkl
-                        qrstuvwxyzabcdefghijklmn
-                        opqrstuvwxyzabcdefghijkl
-                        mnopqrstuvwxyz</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-----------------------------contact----------------------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1>Contact Me</h1>
-                    <p class="space"><i class="fa-solid fa-envelope"></i> jadhavaary02@gmail.com</p>
-                    <P><i class="fa-solid fa-phone"></i> 9022815077</P>
-                    <div class="social-icon">
-                        <a href="https://in.linkedin.com/in/aary-jadhav-b55529331"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/___aary___20?utm_source=qr&igsh=MXZia25vNTRhZXgzZQ=="><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form action="https://formspree.io/f/mdaloqdy" method="POST">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                      </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-          <p>Copyright <i class="fa-regular fa-copyright"></i> Aary </p>
-        </div>
-    </div>
-  
-<script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(event,tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for( tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-</script>
-<script>
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML= "Message Sent Successfully"
-        setTimeout(function(){
-            msg.innerHTML=""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+    <h1>Welcome to My Portfolio</h1>
+    <form action="https://formspree.io/f/mwkzprwr" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <script src="your-script.js"></script>
 </body>
-
 </html>
