@@ -109,12 +109,12 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text"  name="Name" placeholder="Your Name" required>
-                        <input type="email"  name="email" placeholder="Your email" required>
+                    <form action="https://formspree.io/f/mdaloqdy" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">  Submit </button>
-                    </form>
+                        <button type="submit" class="btn btn2">Submit</button>
+                      </form>
                     <span id="msg"></span>
                 </div>
             </div>
@@ -140,8 +140,6 @@
         }
 </script>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbx8xTO6uzzonUykr1j9Mp3xqDwrHpud-kkw8pqSQn-uzIRLut4QNiSTVcvY_FE1ygTbgg/exec'
-  const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
@@ -158,4 +156,5 @@
   })
 </script>
 </body>
+
 </html>
